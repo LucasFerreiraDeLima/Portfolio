@@ -24,11 +24,12 @@
 }
 
 .titulo-home {
-  font-size: 30px;
+  font-size: 50px;
+  letter-spacing: 2px;
   font-weight: bold;
   position: absolute;
   top: 25%;
-  left: 35%;
+  left: 25%;
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
 }
@@ -49,7 +50,7 @@
   width: 100px;
   height: 40px;
   top: 300px;
-  left: 30%;
+  left: 25%;
   position: absolute;
   display: flex;
 	align-items: center;

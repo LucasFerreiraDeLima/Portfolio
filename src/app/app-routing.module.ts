@@ -5,6 +5,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { ConquistasComponent } from './conquistas/conquistas-habilidades.component';
 import { ContatoComponent } from './contato/contato.component';
+import { RequisicoesHttpComponent } from './requisicoes-http/requisicoes-http.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'experiencia', component: ExperienciaComponent },
   { path: 'conquistas', component: ConquistasComponent },
   { path: 'contato', component: ContatoComponent },
+  { path: 'http-testes', component: RequisicoesHttpComponent},
   { path: '**', component: HomeComponent },
 ];
 

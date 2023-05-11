@@ -26,6 +26,7 @@
 }
 
 .box {
+  text-align: center;
   width: 500px;
   margin-left: 28%;
   display: flex;
@@ -34,8 +35,6 @@
   padding: 20px 20px 20px 20px;
 }
 
-.box-texto-titulo {
-  margin-left: 80px;
-  margin-top: 0;
-  font-weight: bold;
+.box-texto {
+
 }

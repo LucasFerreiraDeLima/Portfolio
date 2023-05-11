@@ -27,4 +27,8 @@ export class HomeComponent {
   redirecionarContato(){
     this.router.navigate(['contato']);
   }
+
+  redirecionarHttp() {
+    this.router.navigate(['http-testes']);
+  }
 }

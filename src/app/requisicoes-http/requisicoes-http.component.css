@@ -1,7 +1,7 @@
-.container {
+.requisicoes {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: relative;
 }
 
 .texto-inicial {
@@ -20,9 +20,12 @@
   height: auto;
   width: auto;
   margin-top: 40px;
-  margin-right: 10px;
+  margin-right: 15px;
   margin-left: 10px;
   padding: 15px 15px 15px 15px;
   border: solid 3px black;
 }
 
+p :not(:last-child) {
+  margin-right: 10px;
+}

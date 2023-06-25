@@ -1,40 +1,92 @@
-.container {
+.pagina-experiencia {
+  height: auto;
   width: 100%;
-  height: 100%;
   position: absolute;
-  margin: 0 auto;
-  background: linear-gradient(135deg, #F4F6F7, #B3B6B7);
+  background: linear-gradient(135deg, #E8EBEC 20%, #C4C4C4 80%);
 }
 
-.exp-titulo {
+.experiencia-titulo {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card-profissional {
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
 }
 
-.exp-titulo-texto {
-  font-family: 'Figtree', sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.itens-exp {
-  display: flex;
-  align-items: center;
-}
-
-.box {
+.card-individual-exp {
+  padding: 15px 25px;
+  width: auto;
+  height: auto;
+  background-color: #F8FF89;
   text-align: center;
-  width: 500px;
-  margin-left: 28%;
-  display: flex;
-  margin-top: 80px;
-  background: aquamarine;
-  padding: 20px 20px 20px 20px;
+  border: solid 2px #000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.box-texto {
+.card-individual-exp:hover {
+  background-color: #22A000;
+  color: #FFF;
+  border: solid 2px #FFF;
+  transition: .6s;
+  cursor: pointer;
+}
 
+.card-individual-exp h2 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.imagens {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-individual-exp h3 {
+  margin-top: 15px;
+}
+
+.card-individual-exp p {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.card-individual-edu {
+  padding: 15px 25px;
+  width: auto;
+  height: auto;
+  background-color: #0DF5C7;
+  text-align: center;
+  border: solid 2px #000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card-individual-edu:hover {
+  background-color: #8E44AD;
+  color: #FFF;
+  border: solid 2px #FFF;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.card-individual-edu h2 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.card-individual-edu h3 {
+  margin-top: 15px;
+}
+
+.card-individual-edu p {
+  margin-top: 15px;
+  font-size: 25px;
 }

@@ -1,0 +1,95 @@
+body {
+  width: 100%;
+  height: auto;
+  background-color: #BFE9BE;
+  position: absolute;
+}
+
+.conquistas {
+  margin-bottom: 50px;
+}
+
+.texto-topo {
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.texto-topo-projeto {
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.explicacao-projeto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.card-explicacao {
+  text-align: center;
+  width: 600px;
+  height: auto;
+  background-color: bisque;
+  padding: 20px 20px;
+  border: solid 2px black;
+}
+
+.card-explicacao p {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.card-explicacao a {
+  color: inherit;
+}
+
+.conquistas-1-ano {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  margin-top: 70px;
+}
+
+.titulo-2018 {
+  margin-top: 70px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.card-1-ano {
+  width: 550px;
+  height: auto;
+  background-color: #FFF;
+  margin-right: 50px;
+  text-align: center;
+  padding: 20px 20px;
+  border: solid 4px #145D12;
+}
+
+.card-1-ano h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.card-1-ano p {
+  font-size: 30px;
+}
+
+.conquistas-1-ano img {
+  border: solid 2px #FFF;
+}
+
+.titulo-2019 {
+  margin-top: 70px;
+  font-size: 50px;
+  text-align: center;
+}

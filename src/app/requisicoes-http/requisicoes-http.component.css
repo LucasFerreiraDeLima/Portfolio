@@ -17,6 +17,7 @@
 
 .usuarios-box {
   display: flex;
+  flex-wrap: wrap;
   height: auto;
   width: auto;
   margin-top: 40px;

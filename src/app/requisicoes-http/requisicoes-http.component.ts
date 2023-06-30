@@ -27,8 +27,8 @@ export class RequisicoesHttpComponent implements OnInit{
 
   postJsonInfo() {
     let body = {
-      title: 'foo',
-      body: 'bar',
+      title: 'Olá',
+      body: 'Bom dia',
       userId: 1,
     }
 

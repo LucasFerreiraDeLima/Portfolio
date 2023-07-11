@@ -1,6 +1,4 @@
-@media screen and (max-width: 399px) {
-
-  body {
+body {
   width: 100%;
   height: auto;
   background-color: #BFE9BE;
@@ -110,115 +108,11 @@
   width: 275px;
 }
 
+@media screen and (max-width: 399px) {
+
 }
 
 @media screen and (min-width: 400px) and (max-width: 767px) {
-
-  body {
-  width: 100%;
-  height: auto;
-  background-color: #BFE9BE;
-  position: absolute;
-}
-
-.conquistas {
-  margin-bottom: 50px;
-}
-
-.texto-topo {
-  font-size: 40px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.texto-topo-projeto {
-  font-size: 35px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.explicacao-projeto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 50px;
-}
-
-.card-explicacao {
-  text-align: center;
-  width: 600px;
-  height: auto;
-  background-color: bisque;
-  padding: 20px 20px;
-  border: solid 2px black;
-}
-
-.card-explicacao p {
-  margin-top: 25px;
-  font-size: 20px;
-}
-
-.card-explicacao a {
-  color: inherit;
-}
-
-.conquistas-1-ano {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-
-  margin-top: 70px;
-}
-
-.titulo-2018 {
-  margin-top: 70px;
-  font-size: 50px;
-  text-align: center;
-}
-
-.card-1-ano {
-  width: 550px;
-  height: auto;
-  background-color: #FFF;
-  text-align: center;
-  padding: 20px 20px;
-  border: solid 4px #145D12;
-  margin-bottom: 25px;
-}
-
-.card-1-ano h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  font-size: 30px;
-}
-
-.card-1-ano p {
-  font-size: 20px;
-}
-
-.conquistas-1-ano img {
-  border: solid 2px #FFF;
-}
-
-.imagem-estacao-2018 {
-  width: 125px;
-}
-
-.medalha {
-  width: 50px;
-}
-
-.titulo-2019 {
-  margin-top: 70px;
-  font-size: 50px;
-  text-align: center;
-}
 
 .imagem-estacao-2020 {
   width: 325px;
@@ -228,114 +122,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 
-  body {
-  width: 100%;
-  height: auto;
-  background-color: #BFE9BE;
-  position: absolute;
-}
-
-.conquistas {
-  margin-bottom: 50px;
-}
-
-.texto-topo {
-  font-size: 40px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.texto-topo-projeto {
-  font-size: 35px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.explicacao-projeto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 50px;
-}
-
-.card-explicacao {
-  text-align: center;
-  width: 600px;
-  height: auto;
-  background-color: bisque;
-  padding: 20px 20px;
-  border: solid 2px black;
-}
-
-.card-explicacao p {
-  margin-top: 25px;
-  font-size: 20px;
-}
-
-.card-explicacao a {
-  color: inherit;
-}
-
-.conquistas-1-ano {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-
-  margin-top: 70px;
-}
-
-.titulo-2018 {
-  margin-top: 70px;
-  font-size: 50px;
-  text-align: center;
-}
-
-.card-1-ano {
-  width: 550px;
-  height: auto;
-  background-color: #FFF;
-  text-align: center;
-  padding: 20px 20px;
-  border: solid 4px #145D12;
-  margin-bottom: 25px;
-}
-
-.card-1-ano h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  font-size: 30px;
-}
-
 .card-1-ano p {
   font-size: 30px;
 }
 
-.conquistas-1-ano img {
-  border: solid 2px #FFF;
-}
-
 img {
   margin-left: 25px;
-}
-
-.imagem-estacao-2018 {
-  width: 125px;
-}
-
-.medalha {
-  width: 50px;
-}
-
-.titulo-2019 {
-  margin-top: 70px;
-  font-size: 50px;
-  text-align: center;
 }
 
 .imagem-estacao-2020 {
@@ -346,87 +138,15 @@ img {
 
 @media screen and (min-width: 1001px) and (max-width: 1336px) {
 
-  body {
-  width: 100%;
-  height: auto;
-  background-color: #BFE9BE;
-  position: absolute;
-}
-
-.conquistas {
-  margin-bottom: 50px;
-}
-
 .texto-topo {
   font-size: 50px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  text-align: center;
-  margin-top: 50px;
 }
 
 .texto-topo-projeto {
   font-size: 45px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.explicacao-projeto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 50px;
-}
-
-.card-explicacao {
-  text-align: center;
-  width: 600px;
-  height: auto;
-  background-color: bisque;
-  padding: 20px 20px;
-  border: solid 2px black;
 }
 
 .card-explicacao p {
-  margin-top: 25px;
-  font-size: 30px;
-}
-
-.card-explicacao a {
-  color: inherit;
-}
-
-.conquistas-1-ano {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-
-  margin-top: 70px;
-}
-
-.titulo-2018 {
-  margin-top: 70px;
-  font-size: 50px;
-  text-align: center;
-}
-
-.card-1-ano {
-  width: 550px;
-  height: auto;
-  background-color: #FFF;
-  text-align: center;
-  padding: 20px 20px;
-  border: solid 4px #145D12;
-  margin-bottom: 25px;
-}
-
-.card-1-ano h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 10px;
-  margin-bottom: 30px;
   font-size: 30px;
 }
 
@@ -434,26 +154,8 @@ img {
   font-size: 30px;
 }
 
-.conquistas-1-ano img {
-  border: solid 2px #FFF;
-}
-
 img {
   margin-left: 25px;
-}
-
-.imagem-estacao-2018 {
-  width: 125px;
-}
-
-.medalha {
-  width: 50px;
-}
-
-.titulo-2019 {
-  margin-top: 70px;
-  font-size: 50px;
-  text-align: center;
 }
 
 .imagem-estacao-2020 {
@@ -463,100 +165,30 @@ img {
 }
 
 @media screen and (min-width: 1337px) {
-  body {
-    width: 100%;
-    height: auto;
-    background-color: #BFE9BE;
-    position: absolute;
-  }
-
-  .conquistas {
-    margin-bottom: 50px;
-  }
 
   .texto-topo {
     font-size: 60px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    text-align: center;
-    margin-top: 50px;
   }
 
   .texto-topo-projeto {
     font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  .explicacao-projeto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 50px;
-  }
-
-  .card-explicacao {
-    text-align: center;
-    width: 600px;
-    height: auto;
-    background-color: bisque;
-    padding: 20px 20px;
-    border: solid 2px black;
-  }
-
-  .card-explicacao p {
-    margin-top: 25px;
-    font-size: 20px;
-  }
-
-  .card-explicacao a {
-    color: inherit;
   }
 
   .conquistas-1-ano {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-
-    margin-top: 70px;
-  }
-
-  .titulo-2018 {
-    margin-top: 70px;
-    font-size: 50px;
-    text-align: center;
   }
 
   .card-1-ano {
-    width: 550px;
-    height: auto;
-    background-color: #FFF;
     margin-right: 50px;
-    text-align: center;
-    padding: 20px 20px;
-    border: solid 4px #145D12;
   }
 
   .card-1-ano h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 10px;
-    margin-bottom: 30px;
     font-size: 40px;
   }
 
   .card-1-ano p {
     font-size: 30px;
-  }
-
-  .conquistas-1-ano img {
-    border: solid 2px #FFF;
-  }
-
-  .titulo-2019 {
-    margin-top: 70px;
-    font-size: 50px;
-    text-align: center;
   }
 
   .imagem-estacao-2020 {

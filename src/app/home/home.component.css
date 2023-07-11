@@ -1,3 +1,12 @@
+.container-home {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(135deg, #33E0FF 20%, #338AFF 80%);
+  background-size: 300% 300%;
+  animation: colors 10s ease infinite;
+  position: absolute;
+}
+
 @keyframes colors {
   0% {
     background-position: 0% 50%;
@@ -13,96 +22,73 @@
 
 }
 
-@media screen and (max-width: 399px) {
-  .container-home {
-    width: 100%;
-    height: auto;
-    background: linear-gradient(135deg, #33E0FF 20%, #338AFF 80%);
-    background-size: 300% 300%;
-    animation: colors 10s ease infinite;
-    position: absolute;
-  }
+.titulo-home {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  margin-top: 15%;
+}
 
-  .titulo-home {
-    font-size: 40px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-    margin-top: 15%;
-  }
-
-  .titulo-home
-  :hover {
+.titulo-home
+:hover {
     color: red;
     cursor: pointer;
     transition: .5s;
   }
 
-  .clicar-infos {
-    display: flex;
-  }
+.clicar-infos {
+  display: flex;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao-individual {
+  width: 200px;
+  padding: 20px 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #FFF;
+  text-decoration: none;
+  transition: .8s;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.botao-individual:hover {
+  color: #FFF;
+  background: red;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 399px) {
 
   .botoes {
     margin-top: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     align-content: center;
     flex-wrap: wrap;
   }
 
-  .botao-individual {
-    width: 200px;
-    padding: 20px 15px;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #FFF;
-    text-decoration: none;
-    transition: .8s;
-    border-radius: 3px;
-    margin-bottom: 30px;
-  }
 
-  .botao-individual:hover {
-    color: #FFF;
-    background: red;
-    cursor: pointer;
-  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 767px) {
   .container-home {
-    width: 100%;
     height: auto;
-    background: linear-gradient(135deg, #33E0FF 20%, #338AFF 80%);
-    background-size: 300% 300%;
-    animation: colors 10s ease infinite;
-    position: absolute;
   }
 
   .titulo-home {
     font-size: 60px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-    margin-top: 15%;
-  }
-
-  .titulo-home
-  :hover {
-    color: red;
-    cursor: pointer;
-    transition: .5s;
   }
 
   .botoes {
     margin-top: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     align-content: center;
     flex-wrap: wrap;
   }
@@ -110,113 +96,49 @@
   .botao-individual {
     width: 250px;
     height: 150px;
-    padding: 20px 15px;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #FFF;
-    text-decoration: none;
     transition: .8s;
-    border-radius: 3px;
-    margin-bottom: 30px;
     margin-right: 25px;
   }
 
-  .botao-individual:hover {
-    color: #FFF;
-    background: red;
-    cursor: pointer;
-  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .container-home {
-    width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #33E0FF 20%, #338AFF 80%);
-    background-size: 300% 300%;
-    animation: colors 10s ease infinite;
-    position: absolute;
   }
 
   .titulo-home {
     font-size: 60px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-    margin-top: 15%;
-  }
-
-  .titulo-home
-  :hover {
-    color: red;
-    cursor: pointer;
-    transition: .5s;
   }
 
   .botoes {
     margin-top: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     align-content: center;
     flex-wrap: wrap;
   }
 
   .botao-individual {
-    width: 200px;
     height: 125px;
     padding: 10px 10px;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #FFF;
-    text-decoration: none;
-    transition: .8s;
-    border-radius: 3px;
-    margin-bottom: 30px;
     margin-right: 25px;
   }
 
-  .botao-individual:hover {
-    color: #FFF;
-    background: red;
-    cursor: pointer;
-  }
+
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1336px) {
   .container-home {
-    width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #33E0FF 20%, #338AFF 80%);
-    background-size: 300% 300%;
-    animation: colors 10s ease infinite;
-    position: absolute;
   }
 
   .titulo-home {
     font-size: 70px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
     margin-top: 5%;
-  }
-
-  .titulo-home
-  :hover {
-    color: red;
-    cursor: pointer;
-    transition: .5s;
   }
 
   .botoes {
     margin-top: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     align-content: center;
     flex-wrap: wrap;
   }
@@ -224,141 +146,64 @@
   .botao-individual {
     width: 250px;
     height: 150px;
-    padding: 20px 15px;
-    color: black;
     font-size: 30px;
-    font-weight: bold;
-    background-color: #FFF;
-    text-decoration: none;
-    transition: .8s;
-    border-radius: 3px;
-    margin-bottom: 30px;
     margin-right: 25px;
   }
 
-  .botao-individual:hover {
-    color: #FFF;
-    background: red;
-    cursor: pointer;
-  }
+
 }
 
 @media screen and (min-width: 1337px) and (max-width: 2000px) {
   .container-home {
-    width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #33E0FF 20%, #338AFF 80%);
-    background-size: 300% 300%;
-    animation: colors 10s ease infinite;
-    position: absolute;
   }
 
   .titulo-home {
     font-size: 70px;
     letter-spacing: 2px;
-    font-weight: bold;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-    margin-top: 15%;
-  }
-
-  .titulo-home
-  :hover {
-    color: red;
-    cursor: pointer;
-    transition: .5s;
   }
 
   .clicar-infos {
-    display: flex;
     justify-content: center;
   }
 
   .botoes {
     width: 100px;
     height: 275px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .botao-individual {
     margin-right: 50px;
     padding: 40px 25px;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #FFF;
-    text-decoration: none;
-    transition: .8s;
     display: block;
-    border-radius: 3px;
-  }
-
-  .botao-individual:hover {
-    color: #FFF;
-    background: red;
-    cursor: pointer;
   }
 
 }
 
 @media screen and (min-width: 2001px) and (max-width: 2560px) {
   .container-home {
-    width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #33E0FF 20%, #338AFF 80%);
-    background-size: 300% 300%;
-    animation: colors 10s ease infinite;
-    position: absolute;
   }
 
   .titulo-home {
     font-size: 70px;
     letter-spacing: 2px;
-    font-weight: bold;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
     margin-top: 8%;
   }
 
-  .titulo-home
-  :hover {
-    color: red;
-    cursor: pointer;
-    transition: .5s;
-  }
-
   .clicar-infos {
-    display: flex;
     justify-content: center;
   }
 
   .botoes {
     width: 100px;
     height: 275px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .botao-individual {
     margin-right: 50px;
     padding: 40px 25px;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #FFF;
-    text-decoration: none;
-    transition: .8s;
     display: block;
-    border-radius: 3px;
-  }
-
-  .botao-individual:hover {
-    color: #FFF;
-    background: red;
-    cursor: pointer;
   }
 
 }

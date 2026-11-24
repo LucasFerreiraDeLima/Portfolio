@@ -1,28 +1,24 @@
-<head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</head>
-<header>
-    <div class="container-fluid">
-      <span class="navbar-text texto-nome">
-        Lucas Lima - Front-End Developer<br>
-      </span>
-      <ul class="navbar-nav mx-2">
-        <li class="nav-item">
-          <button class="btn" (click)="redirecionarHome()">Home</button>
-        </li>
-        <li class="nav-item">
-          <button class="btn" (click)="redirecionarSobre()">Sobre</button>
-        </li>
-        <li class="nav-item">
-          <button class="btn" (click)="redirecionarExperiencia()">Experiência e Formação Acadêmica</button>
-        </li>
-        <li class="nav-item">
-          <button class="btn" (click)="redirecionarConquistas()">Projetos e premiações</button>
-        </li>
-        <li class="nav-item">
-          <button class="btn" (click)="redirecionarContato()">Contato</button>
-        </li>
-      </ul>
-    </div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" [routerLink]="'home' | localizedRoute" [attr.aria-label]="'nav.homeAria' | t"><span class="brand-mark">LL</span><span>Lucas Lima</span></a>
+    <nav [attr.aria-label]="'nav.main' | t">
+      <a [routerLink]="'home' | localizedRoute" routerLinkActive="active" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{ exact: true }">{{ 'nav.home' | t }}</a>
+      <a [routerLink]="'about' | localizedRoute" routerLinkActive="active" ariaCurrentWhenActive="page">{{ 'nav.about' | t }}</a>
+      <a [routerLink]="'experience' | localizedRoute" routerLinkActive="active" ariaCurrentWhenActive="page">{{ 'nav.experience' | t }}</a>
+      <a [routerLink]="'projects' | localizedRoute" routerLinkActive="active" ariaCurrentWhenActive="page">{{ 'nav.projects' | t }}</a>
+      <a [routerLink]="'lab' | localizedRoute" routerLinkActive="active" ariaCurrentWhenActive="page">{{ 'nav.lab' | t }}</a>
+      <a class="nav-contact" [routerLink]="'contact' | localizedRoute" routerLinkActive="active" ariaCurrentWhenActive="page">{{ 'nav.contact' | t }} <span aria-hidden="true">&#8599;</span></a>
+    </nav>
+    <button class="language-trigger" type="button" aria-haspopup="dialog" [attr.aria-expanded]="languageModalOpen" (click)="languageModalOpen = true"><span class="language-trigger-code">{{ i18n.language.toUpperCase() }}</span>{{ 'lang.open' | t }}</button>
+  </div>
 </header>
+
+<div *ngIf="languageModalOpen" class="language-backdrop" (click)="languageModalOpen = false" (keydown.escape)="languageModalOpen = false" tabindex="-1">
+  <section class="language-dialog" role="dialog" aria-modal="true" [attr.aria-label]="'lang.title' | t" (click)="$event.stopPropagation()">
+    <button class="language-close" type="button" [attr.aria-label]="'lang.close' | t" (click)="languageModalOpen = false">×</button>
+    <p class="eyebrow">{{ 'lang.open' | t }}</p><h2>{{ 'lang.title' | t }}</h2><p>{{ 'lang.description' | t }}</p>
+    <div class="language-options">
+      <button *ngFor="let language of languages" type="button" [class.selected]="i18n.language === language.id" [attr.aria-pressed]="i18n.language === language.id" (click)="selectLanguage(language.id)"><span>{{ language.flag }}</span>{{ language.key | t }}<b *ngIf="i18n.language === language.id" aria-hidden="true">✓</b></button>
+    </div>
+  </section>
+</div>

@@ -1,8 +1,41 @@
-body {
-  padding: 0;
-  margin: 0;
+:root {
+  color-scheme: light;
+  --paper: #f5f5f2;
+  --surface: #fff;
+  --ink: #17211e;
+  --muted: #63716b;
+  --line: #dce2de;
+  --accent: #176b52;
+  --accent-dark: #104d3c;
+  --soft: #e8f0ec;
+  --font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+body { padding: 0; margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #e39e4a; outline-offset: 3px; }
+.container { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
+.section { padding: 88px 0; }
+.eyebrow { margin: 0 0 14px; color: var(--accent); font-size: .76rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+.page-title { max-width: 780px; margin: 0; font-size: clamp(2.5rem, 6vw, 4.7rem); line-height: 1.04; letter-spacing: -.055em; font-weight: 700; }
+.lead { max-width: 660px; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.22rem); }
+.section-heading { margin: 0 0 28px; font-size: clamp(1.7rem, 3vw, 2.4rem); letter-spacing: -.04em; line-height: 1.15; }
+.card { border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; padding: 0 20px; border: 1px solid var(--accent); border-radius: 8px; background: var(--accent); color: white; font: inherit; font-weight: 650; text-decoration: none; transition: background .18s ease, transform .18s ease; }
+.button:hover { background: var(--accent-dark); transform: translateY(-1px); }
+.button-secondary { color: var(--ink); background: transparent; border-color: var(--line); }
+.button-secondary:hover { color: var(--accent-dark); background: var(--soft); }
+.site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+.skip-link { position: fixed; top: 8px; left: 8px; z-index: 20; padding: 10px 14px; transform: translateY(-160%); border-radius: 6px; background: var(--ink); color: white; font-weight: 650; }
+.skip-link:focus { transform: translateY(0); }
+.footer-inner { min-height: 64px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.footer-inner a { color: var(--accent); font-weight: 650; text-decoration: none; }
+@media (max-width: 640px) { .container { width: min(100% - 36px, 1120px); } .section { padding: 64px 0; } .footer-inner { min-height: 64px; align-items: flex-start; flex-direction: column; justify-content: center; padding-block: 10px; gap: 2px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
 
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+/* Timeline summary card */
+.timeline-summary{display:flex;align-items:center;gap:12px;width:fit-content;max-width:100%;margin-top:24px;padding:12px 16px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;background:var(--surface)}.timeline-summary-mark{width:8px;height:8px;flex:0 0 8px;border-radius:50%;background:var(--accent)}.timeline-summary-copy{display:grid;gap:4px;min-width:0}.timeline-summary-period{display:flex;align-items:center;gap:9px;color:var(--ink);font-size:.82rem}.timeline-summary-period i{width:24px;height:1px;background:#9bb7a5}.timeline-summary-period .summary-current{padding:3px 7px;border-radius:999px;color:var(--accent-dark);background:var(--soft);font-size:.62rem;font-style:normal;font-weight:750}.timeline-summary small{color:var(--muted);font-size:.7rem;line-height:1.4}@media(max-width:600px){.timeline-summary{width:100%;padding:11px 13px}.timeline-summary-period{gap:7px;font-size:.78rem}.timeline-summary-period i{width:16px}}

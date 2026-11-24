@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent {
-
+  activeFilter: 'all' | 'work' | 'education' = 'all';
 }

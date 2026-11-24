@@ -1,50 +1,28 @@
-<header>
-  <app-header></app-header>
-</header>
-
-<body>
-  <div class="pagina-experiencia">
-    <h1 class="experiencia-titulo">Experiência Profissional</h1>
-    <div class="card-profissional">
-      <div class="card-individual-exp">
-        <h2>Analista de testes (QA) <br>IBM / ITAÚ</h2>
-        <div class="imagens">
-          <img src="https://logodownload.org/wp-content/uploads/2014/04/ibm-logo.png" alt="Logo IBM" width="125px" height="75px">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banco_Ita%C3%BA_logo.svg/237px-Banco_Ita%C3%BA_logo.svg.png" alt="Logo Itaú" width="100px">
-        </div>
-        <h3>Maio/2022 - Abril/2023 <br>1 ano</h3>
-        <p>Testes manuais <br> Testes automatizados</p>
-      </div>
-      <div class="card-individual-exp">
-        <h2>Desenvolvedor Front-End <br> IBM </h2>
-        <div class="imagens">
-          <img src="https://logodownload.org/wp-content/uploads/2014/04/ibm-logo.png" alt="Logo IBM" width="200px" height="100px">
-        </div>
-        <h3>Abril/2023 - Novembro/2023 <br>8 meses</h3>
-        <p>HTML <br> CSS <br> JavaScript <br> Angular <br> React</p>
-      </div>
-    </div>
-
-
-    <h1 class="experiencia-titulo">Formação acadêmica</h1>
-    <div class="card-profissional">
-      <div class="card-individual-edu">
-        <h2>Análise e Desenvolvimento de Sistemas <br></h2>
-        <br>
-        <div class="imagens">
-          <img src="https://seeklogo.com/images/U/uniasselvi-logo-C2AA37D821-seeklogo.com.png" alt="Logo Uniasselvi" width="150px" height="100px">
-        </div>
-        <br>
-        <h3>Fevereiro/2022 - Julho/2025 <br>Em andamento <br><br><strong>Ensino Superior</strong></h3>
-      </div>
-      <div class="card-individual-edu">
-        <h2>Eletrônica integrado ao Ensino Médio <br><br></h2>
-        <div class="imagens">
-          <img src="https://etecbentoquirino.com.br/new/wp-content/uploads/2020/08/logo-300x150-1.png" alt="Logo ETEC" width="200px" height="100px">
-        </div>
-        <br>
-        <h3>Fevereiro/2018 - Dezembro/2020<br>Finalizado<br><br><strong>Ensino Médio/Técnico</strong></h3>
-      </div>
-    </div>
+<section class="section experience-page"><div class="container">
+  <header class="timeline-intro"><p class="eyebrow">{{ 'exp.eyebrow' | t }}</p><h1 class="page-title">{{ 'exp.title' | t }}</h1><p class="lead intro">{{ 'exp.lead' | t }}</p><div class="timeline-summary"><span class="timeline-summary-mark" aria-hidden="true"></span><div class="timeline-summary-copy"><div class="timeline-summary-period"><strong>2018</strong><i aria-hidden="true"></i><strong>2026</strong><span class="summary-current">{{ 'exp.current' | t }}</span></div><small>{{ 'exp.years' | t }}</small></div></div></header>
+  <app-knowledge-summary></app-knowledge-summary>
+  <nav class="timeline-filter" [attr.aria-label]="'exp.showTimeline' | t"><span>{{ 'exp.filterLabel' | t }}</span><button type="button" [class.active]="activeFilter === 'all'" [attr.aria-pressed]="activeFilter === 'all'" (click)="activeFilter = 'all'">{{ 'exp.all' | t }} <small>5</small></button><button type="button" [class.active]="activeFilter === 'work'" [attr.aria-pressed]="activeFilter === 'work'" (click)="activeFilter = 'work'">{{ 'exp.work' | t }} <small>3</small></button><button type="button" [class.active]="activeFilter === 'education'" [attr.aria-pressed]="activeFilter === 'education'" (click)="activeFilter = 'education'">{{ 'exp.education' | t }} <small>2</small></button></nav>
+  <div class="timeline" [attr.aria-label]="'exp.timelineAria' | t" aria-live="polite">
+    <article *ngIf="activeFilter !== 'work'" class="timeline-entry education-entry"><div class="timeline-date"><span>2018 — 2020</span><small>{{ 'exp.dateSchool' | t }}</small></div><div class="timeline-marker" aria-hidden="true"><span>01</span></div><div class="timeline-card card">
+      <div class="timeline-card-heading"><div><p class="eyebrow">{{ 'exp.technical' | t }}</p><h2>{{ 'exp.electronics' | t }}</h2><p class="timeline-subtitle">{{ 'exp.completed2020' | t }}</p></div><span class="study-symbol" aria-hidden="true">⚡</span></div><p>{{ 'exp.schoolIntro' | t }}</p>
+      <div class="school-project"><img src="/assets/estacao-2019.png" [alt]="'exp.stationAlt' | t"><div><span class="mini-label">{{ 'exp.schoolProject' | t }}</span><h3>{{ 'exp.station' | t }}</h3><p>{{ 'exp.stationDetail' | t }}</p><div class="tags"><span>Arduino</span><span>{{ 'projects.sensors' | t }}</span><span>{{ 'projects.solar' | t }}</span><span>IoT</span></div></div></div><a class="timeline-link" [routerLink]="'projects' | localizedRoute">{{ 'exp.viewProject' | t }} <span aria-hidden="true">↗</span></a>
+    </div></article>
+    <article *ngIf="activeFilter !== 'work'" class="timeline-entry education-entry"><div class="timeline-date"><span>2022 — 2025</span><small>{{ 'exp.higher' | t }}</small></div><div class="timeline-marker" aria-hidden="true"><span>02</span></div><div class="timeline-card card">
+      <div class="timeline-card-heading"><div><p class="eyebrow">{{ 'exp.higherLabel' | t }}</p><h2>{{ 'exp.degree' | t }}</h2><p class="timeline-subtitle">{{ 'exp.degreeDates' | t }}</p></div><span class="study-symbol degree-symbol" aria-hidden="true">ADS</span></div><p>{{ 'exp.degreeText' | t }}</p>
+      <div class="study-visual"><img class="study-image" src="/assets/ads-education.svg" [alt]="'exp.studyImage' | t"><div><span class="mini-label">{{ 'exp.educationComplete' | t }}</span><h3>{{ 'exp.applied' | t }}</h3><p>{{ 'exp.studiesOverlap' | t }}</p><div class="tags"><span>{{ 'exp.softwareSystems' | t }}</span><span>{{ 'exp.degree' | t }}</span><span>{{ 'exp.educationComplete' | t }}</span></div></div></div>
+    </div></article>
+    <article *ngIf="activeFilter !== 'education'" class="timeline-entry job-entry"><div class="timeline-date"><span>2022 — 2023</span><small>{{ 'exp.dateIbm' | t }}</small></div><div class="timeline-marker" aria-hidden="true"><span>03</span></div><div class="timeline-card card company-timeline-card ibm-timeline">
+      <header class="timeline-company-heading"><div class="timeline-logo ibm-logo"><img src="/assets/IBM_logo.svg.png" alt="IBM"></div><div><p class="eyebrow">{{ 'exp.internship' | t }}</p><h2>IBM</h2><p class="timeline-subtitle">{{ 'exp.softwareDevQuality' | t }}</p></div></header>
+      <div class="role-list"><section class="role-card"><div class="role-icon" aria-hidden="true">QA</div><div><p class="eyebrow">{{ 'exp.itau' | t }}</p><h3>{{ 'exp.manualAuto' | t }}</h3><p>{{ 'exp.ibmTestingDetail' | t }}</p><div class="tags"><span>{{ 'exp.manualAuto' | t }}</span><span>{{ 'exp.automation' | t }}</span><span>{{ 'knowledge.quality' | t }}</span></div></div></section>
+        <section class="role-card"><div class="role-icon code-icon" aria-hidden="true">&lt;/&gt;</div><div><p class="eyebrow">{{ 'exp.internalIBM' | t }}</p><h3>{{ 'exp.skillsSite' | t }}</h3><p>{{ 'exp.ibmFrontendDetail' | t }}</p><div class="tags"><span>Angular</span><span>TypeScript</span><span>{{ 'exp.roleFrontend' | t }}</span></div></div></section></div>
+    </div></article>
+    <article *ngIf="activeFilter !== 'education'" class="timeline-entry job-entry"><div class="timeline-date"><span>2024 — 2026</span><small>{{ 'exp.dateCielo' | t }}</small></div><div class="timeline-marker" aria-hidden="true"><span>04</span></div><div class="timeline-card card company-timeline-card cielo-timeline">
+      <header class="timeline-company-heading"><div class="timeline-logo cielo-logo"><img src="/assets/cielo-logo.svg" alt=""><span>cielo</span></div><div><p class="eyebrow">{{ 'exp.cieloRole' | t }}</p><h2>Cielo</h2><p class="timeline-subtitle">{{ 'exp.cieloFocus' | t }}</p></div></header>
+      <div class="timeline-feature"><span class="feature-mark" aria-hidden="true">↗</span><div><p class="eyebrow">{{ 'exp.featuredProject' | t }}</p><h3>{{ 'exp.vendeu' | t }}</h3><p>{{ 'exp.vendeuCopy' | t }}</p><a class="timeline-link" href="https://www.cielo.com.br/escolha-como-receber/" target="_blank" rel="noopener noreferrer">{{ 'exp.learn' | t }} <span aria-hidden="true">↗</span></a></div></div><p class="timeline-description">{{ 'exp.cieloDetail' | t }}</p><div class="tags"><span>Java</span><span>Angular</span><span>React</span><span>SQL</span><span>Full-Stack</span></div>
+    </div></article>
+    <article *ngIf="activeFilter !== 'education'" class="timeline-entry job-entry current-entry"><div class="timeline-date"><span>2026 — {{ 'exp.current' | t }}</span><small>{{ 'exp.sinceMay' | t }}</small></div><div class="timeline-marker current-marker" aria-hidden="true"><span>05</span></div><div class="timeline-card card company-timeline-card cit-timeline">
+      <header class="timeline-company-heading"><div class="timeline-logo cit-logo"><img src="/assets/ciandt-logo.svg" alt="CI&T"></div><div><p class="eyebrow">{{ 'exp.citTitle' | t }}</p><h2>CI&T</h2><p class="timeline-subtitle">{{ 'exp.citFocus' | t }}</p></div><span class="current-badge"><i></i> {{ 'exp.currentBadge' | t }}</span></header>
+      <div class="timeline-feature bradesco-feature"><span class="feature-mark" aria-hidden="true">₿</span><div><p class="eyebrow">{{ 'exp.bradesco' | t }} · Bradesco</p><h3>{{ 'exp.crypto' | t }}</h3><p>{{ 'exp.cryptoCopy' | t }}</p></div></div><p class="timeline-description">{{ 'exp.citDetail' | t }}</p><div class="tags"><span>Java</span><span>Angular</span><span>React</span><span>TypeScript</span><span>REST APIs</span><span>SQL</span></div><span class="milestone-label"><i></i> {{ 'exp.currentMoment' | t }}</span>
+    </div></article>
   </div>
-</body>
+</div></section>

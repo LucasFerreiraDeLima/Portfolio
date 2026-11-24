@@ -1,0 +1,32 @@
+{
+  "home": {
+    "pt": { "title": "Lucas Lima — Desenvolvedor Full-Stack Pleno", "description": "Portfólio de Lucas Lima, desenvolvedor Full-Stack Pleno com mais de 3 anos de experiência em aplicações web, APIs e soluções distribuídas." },
+    "en": { "title": "Lucas Lima — Mid-Level Full-Stack Software Engineer", "description": "Portfolio of Lucas Lima, a Mid-Level Full-Stack Software Engineer with 3+ years of experience in web applications, APIs, and distributed systems." },
+    "es": { "title": "Lucas Lima — Desarrollador Full-Stack", "description": "Portafolio de Lucas Lima, desarrollador Full-Stack con más de 3 años de experiencia en aplicaciones web, APIs y sistemas distribuidos." }
+  },
+  "about": {
+    "pt": { "title": "Sobre — Lucas Lima", "description": "Conheça a trajetória, as competências e a formação de Lucas Lima, desenvolvedor Full-Stack em Sumaré, São Paulo." },
+    "en": { "title": "About — Lucas Lima", "description": "Learn about Lucas Lima’s background, skills, and education. Mid-Level Full-Stack Software Engineer based in Sumaré, Brazil." },
+    "es": { "title": "Acerca de — Lucas Lima", "description": "Conoce la trayectoria, las competencias y la formación de Lucas Lima, desarrollador Full-Stack en Sumaré, Brasil." }
+  },
+  "experience": {
+    "pt": { "title": "Experiência e formação — Lucas Lima", "description": "Experiência profissional na CI&T, Cielo e IBM, além da formação em Análise e Desenvolvimento de Sistemas de Lucas Lima." },
+    "en": { "title": "Experience and education — Lucas Lima", "description": "Explore Lucas Lima’s software engineering experience at CI&T, Cielo, and IBM, plus his Systems Analysis and Development degree." },
+    "es": { "title": "Experiencia y formación — Lucas Lima", "description": "Conoce la experiencia profesional de Lucas Lima en CI&T, Cielo e IBM, y su formación en Análisis y Desarrollo de Sistemas." }
+  },
+  "projects": {
+    "pt": { "title": "Projetos — Lucas Lima", "description": "Conheça o DevToolsKit, a estação meteorológica desenvolvida no curso técnico e outros projetos de Lucas Lima." },
+    "en": { "title": "Projects — Lucas Lima", "description": "Explore DevToolsKit, a developer tools project, a student-built weather station, and other work by Lucas Lima." },
+    "es": { "title": "Proyectos — Lucas Lima", "description": "Descubre DevToolsKit, una estación meteorológica desarrollada durante sus estudios técnicos y otros proyectos de Lucas Lima." }
+  },
+  "contact": {
+    "pt": { "title": "Contato — Lucas Lima", "description": "Entre em contato com Lucas Lima para oportunidades profissionais, colaboração em tecnologia e conversas sobre desenvolvimento de software." },
+    "en": { "title": "Contact — Lucas Lima", "description": "Contact Lucas Lima about software engineering opportunities, technology collaboration, or professional conversations." },
+    "es": { "title": "Contacto — Lucas Lima", "description": "Contacta con Lucas Lima para oportunidades profesionales, colaboración tecnológica y conversaciones sobre desarrollo de software." }
+  },
+  "lab": {
+    "pt": { "title": "Laboratório Full-Stack — Lucas Lima", "description": "Explore uma simulação interativa de fluxo full-stack entre interface, API, regras de negócio, persistência e resposta HTTP." },
+    "en": { "title": "Full-Stack Lab — Lucas Lima", "description": "Explore an interactive full-stack order flow across the interface, API, business rules, persistence, and HTTP response." },
+    "es": { "title": "Laboratorio Full-Stack — Lucas Lima", "description": "Explora una simulación interactiva de un flujo full-stack entre interfaz, API, reglas de negocio, persistencia y respuesta HTTP." }
+  }
+}

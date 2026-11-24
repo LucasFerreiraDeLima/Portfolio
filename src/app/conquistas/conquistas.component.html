@@ -1,57 +1,21 @@
-<header>
-  <app-header></app-header>
-</header>
-
-<body>
-  <div class="conquistas">
-    <h1 class="texto-topo">Conquistas, apresentações e premiações</h1>
-    <h1 class="texto-topo-projeto">Projeto: Estação Meteorológica de Custo Reduzido</h1>
-    <div class="explicacao-projeto">
-      <div class="card-explicacao">
-        <h2><strong>Explicação rápida sobre o projeto</strong></h2>
-        <p>Projeto de estação meteorológica com custo reduzido, desenvolvido durante o ensino médio/técnico, colocando em prática
-          conhecimentos adquiridos no decorrer do curso. <br><br> Em resumo, o projeto trata-se de um conjunto de sensores, circuitos elétricos,
-          um microcontrolador (Arduino), painel solar para alimentação e dispositivo para envio de dados para a internet. <br><br>O objetivo central do projeto foi
-          desenvolver uma estação meteorológica com custo reduzido, para auxiliar principalmente agricultores de baixa renda que não podem pagar por
-          tecnologias mais caras. <br><br>Foi um projeto de TCC, desenvolvido desde o 1º ano, e apresentado em diversos eventos de tecnologia no estado de São Paulo.<br><br>
-          Para mais detalhes, há uma explicação sobre o projeto no Linkedin (link para o meu perfil na seção
-          <a href="https://luminous-souffle-87bf9c.netlify.app/contato">Contato</a> desse site)
-        </p>
-      </div>
-    </div>
-    <h1 class="titulo-2018"><strong>2018</strong></h1>
-    <div class="conquistas-1-ano">
-      <div class="card-1-ano">
-        <h1>Eventos de tecnologia</h1>
-        <p><strong>9ª Bentotec - Categoria: Indústria</strong></p> <img src="../../assets/bronze.png" width="75px">
-      </div>
-      <img  src="../../assets/estacao-2018.png" width="250px">
-    </div>
-    <h1 class="titulo-2019"><strong>2019</strong></h1>
-    <div class="conquistas-1-ano">
-      <div class="card-1-ano">
-        <h1>Eventos de tecnologia</h1>
-        <p>
-          <strong>3ª FETEC - Categoria: Meio Ambiente</strong> <img src="../../assets/prata.png" width="75px"><br><br>
-          10ª Bentotec<br><br>
-          9ª Bragantec<br><br>
-          Mostra de Trabalhos da VIII SNCT – Semana Nacional de Ciência e Tecnologia do IFSP Hortolândia<br><br>
-          Festival de Inovação e Criatividade de Vinhedo
-        </p>
-      </div>
-      <img src="../../assets/estacao-2019.png" width="250px" height="350px">
-    </div>
-    <h1 class="titulo-2019"><strong>2020</strong></h1>
-    <div class="conquistas-1-ano">
-      <div class="card-1-ano">
-        <h1>Eventos de tecnologia</h1>
-        <p>
-          <strong>Bentotec Experience (online)</strong> <img src="../../assets/ouro.png" width="75px"><br><br>
-          <strong>10ª Bragantec (online)</strong> <img src="../../assets/ouro.png" width="75px"><br><br>
-          19ª Feira Brasileira de Ciência e Engenharia - FEBRACE (online)
-        </p>
-      </div>
-      <img class="imagem-estacao-2020" src="../../assets/premiacao-2020.png">
-    </div>
-  </div>
-</body>
+<section class="section projects-page"><div class="container">
+  <header class="projects-hero"><div><p class="eyebrow"><span class="hero-dot"></span> {{ 'projects.eyebrow' | t }}</p><h1 class="page-title">{{ 'projects.title' | t }}</h1><p class="projects-lead">{{ 'projects.lead' | t }}</p></div>
+    <nav class="project-index" [attr.aria-label]="'projects.index' | t"><a [routerLink]="'projects' | localizedRoute" fragment="devtoolskit"><span>01</span> {{ 'projects.personal' | t }}</a><a [routerLink]="'projects' | localizedRoute" fragment="estacao"><span>02</span> {{ 'projects.technical' | t }}</a></nav>
+  </header>
+  <section id="devtoolskit" class="project-section personal-section" aria-labelledby="devtoolskit-title"><div class="section-label"><span>01</span><p class="eyebrow">{{ 'projects.inProgress' | t }}</p></div>
+    <article class="devtoolskit-card card"><div class="devtoolskit-copy"><div class="product-brand"><span class="dk-mark">DK</span><span>devtoolskit.net</span><span class="live-label"><i></i> {{ 'projects.online' | t }}</span></div><h2 id="devtoolskit-title">DevToolsKit</h2><p class="project-lead">{{ 'projects.devtoolsLead' | t }}</p><p>{{ 'projects.devtoolsP1' | t }}</p><p>{{ 'projects.devtoolsP2' | t }}</p><div class="tags"><span>20+ {{ 'projects.tools' | t }}</span><span>Português · English · Español</span><span>{{ 'projects.privacy' | t }}</span><span>{{ 'projects.accessibility' | t }}</span></div><a class="button project-button" href="https://www.devtoolskit.net/" target="_blank" rel="noopener noreferrer">{{ 'projects.visitDevtools' | t }} <span aria-hidden="true">&#8599;</span></a></div>
+      <div class="devtoolskit-visual" [attr.aria-label]="'projects.preview' | t"><div class="browser-bar"><div class="browser-dots"><i></i><i></i><i></i></div><span>devtoolskit.net</span><span class="browser-menu">···</span></div><div class="tool-preview"><div class="preview-title"><span class="preview-logo">DK</span><div><b>{{ 'projects.tools' | t }}</b><small>{{ 'projects.pickTool' | t }}</small></div></div><div class="preview-search"><span aria-hidden="true">⌕</span> {{ 'projects.searchTools' | t }}</div><div class="tool-grid"><div><span>&#123; &#125;</span><b>{{ 'projects.json' | t }}</b></div><div><span>⇄</span><b>{{ 'projects.diff' | t }}</b></div><div><span>#</span><b>{{ 'projects.hash' | t }}</b></div><div><span>.*</span><b>{{ 'projects.regex' | t }}</b></div><div><span>↔</span><b>{{ 'projects.color' | t }}</b></div><div><span>◷</span><b>{{ 'projects.timestamp' | t }}</b></div></div><div class="preview-privacy"><i></i> {{ 'projects.browserPrivacy' | t }}</div></div><div class="language-stamp">PT · EN · ES</div></div>
+    </article>
+  </section>
+  <section id="estacao" class="project-section school-section" aria-labelledby="station-title"><div class="section-label"><span>02</span><p class="eyebrow">{{ 'projects.technicalSchool' | t }}</p></div>
+    <article class="station-card card"><div class="station-main"><div class="station-copy"><p class="eyebrow">{{ 'projects.electronics' | t }}</p><h2 id="station-title">{{ 'exp.station' | t }}</h2><p>{{ 'projects.stationP1' | t }}</p><p>{{ 'projects.stationP2' | t }}</p><div class="tags"><span>Arduino</span><span>Sensores / Sensors</span><span>{{ 'projects.solar' | t }}</span><span>IoT</span></div></div><figure class="station-image"><img src="/assets/estacao-2019.png" [alt]="'projects.prototype2019' | t"><figcaption>{{ 'projects.prototype2019' | t }}</figcaption></figure></div>
+      <div class="station-gallery"><figure><img src="/assets/estacao-2018.png" [alt]="'projects.firstRecords' | t"><figcaption>{{ 'projects.firstRecords' | t }}</figcaption></figure><figure><img src="/assets/premiacao-2020.png" [alt]="'projects.onlinePresentation' | t"><figcaption>{{ 'projects.onlinePresentation' | t }}</figcaption></figure><a class="gallery-note" [routerLink]="'experience' | localizedRoute"><span class="gallery-icon">↗</span><span><b>{{ 'projects.partOfEducation' | t }}</b><small>{{ 'projects.timelineLink' | t }}</small></span></a></div>
+      <section class="recognition-section" aria-labelledby="recognition-title"><div class="recognition-heading"><div><p class="eyebrow">{{ 'projects.recognition' | t }}</p><h3 id="recognition-title">{{ 'projects.recognitionTitle' | t }}</h3><p>{{ 'projects.recognitionText' | t }}</p></div><span class="award-total"><b>3</b><small>{{ 'projects.medals' | t }}</small></span></div>
+        <div class="award-grid"><article class="award-card card"><div class="award-top"><span>2018</span><img src="/assets/bronze.png" [alt]="'projects.bronze' | t"></div><h3>{{ 'projects.bentotec' | t }}</h3><p>{{ 'projects.industry' | t }}</p><span class="award-rank bronze">{{ 'projects.bronze' | t }}</span></article>
+          <article class="award-card card"><div class="award-top"><span>2019</span><img src="/assets/prata.png" [alt]="'projects.silver' | t"></div><h3>{{ 'projects.fetec' | t }}</h3><p>{{ 'projects.environment' | t }}</p><span class="award-rank silver">{{ 'projects.silver' | t }}</span></article>
+          <article class="award-card card"><div class="award-top"><span>2020</span><img src="/assets/ouro.png" [alt]="'projects.gold' | t"></div><h3>{{ 'projects.bentotecBragantec' | t }}</h3><p>{{ 'projects.onlineAwards' | t }}</p><span class="award-rank gold">{{ 'projects.gold' | t }}</span></article></div>
+      </section>
+    </article>
+  </section>
+  <section class="other-projects" aria-labelledby="other-title"><div class="section-label"><span>+</span><p class="eyebrow">{{ 'projects.alsoBuilding' | t }}</p></div><article class="other-project-card card"><div class="other-project-icon" aria-hidden="true">QP</div><div><h2 id="other-title">Quitanda Potiguar</h2><p>{{ 'projects.quitanda' | t }}</p><div class="tags"><span>Next.js</span><span>PostgreSQL</span><span>Prisma</span></div></div><span class="project-state">{{ 'projects.personalProject' | t }}</span></article></section>
+</div></section>

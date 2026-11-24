@@ -1,23 +1,14 @@
-<header>
-  <app-header></app-header>
-</header>
-<div class="sobre">
-  <div class="sobre-topo">
-    <h1 class="sobre-titulo">
-      Sobre mim:
-    </h1>
-    <div class="sobre-conteudo">
-      <div class="box">
-        <p class="texto-box">
-          Meu nome é Lucas. Moro em Valinhos-SP. Tenho atualmente 20 anos, e sou um desenvolvedor em início de carreira.<br> <br>
-          Gosto muito de estudar e aprender cada vez mais sobre tecnologia, especialmente a área de desenvolvimento front end.<br><br>
-          Estudo Análise e Desenvolvimento de Sistemas na universidade Uniasselvi. Tenho 1 ano de experiência na área de testes de software (QA) trabalhando na IBM (projeto Itaú), e 8 meses de experiência como desenvolvedor Front-End trabalhando em um projeto interno da mesma.<br><br>
-          Gosto de trabalhar em grupo, sou curioso, e posso trabalhar tanto de forma remota quanto presencial. Tenho conhecimentos em testes de software (manuais e automatizados),
-          linguagens de programação (JavaScript, TypeScript, Java, Python, SQL), frameworks e bibliotecas utilizados no desenvolvimento de sites. <br> <br>
-          Para mais detalhes, consulte as outras páginas desse site.
-        </p>
-      </div>
-      <img src="../../assets/Perfil linkedin 1.jpg" alt="Foto-Lucas">
-    </div>
+<section class="section about-page"><div class="container">
+  <p class="eyebrow">{{ 'about.eyebrow' | t }}</p><h1 class="page-title">{{ 'about.title' | t }}</h1>
+  <div class="about-grid"><div class="about-copy"><p class="lead">{{ 'about.lead' | t }}</p><p>{{ 'about.p2' | t }}</p><p>{{ 'about.p3' | t }}</p></div>
+    <aside class="about-facts card"><h2>{{ 'about.summary' | t }}</h2><dl><div><dt>{{ 'about.focus' | t }}</dt><dd>{{ 'home.role' | t }}</dd></div><div><dt>{{ 'about.location' | t }}</dt><dd>{{ 'home.location' | t }}</dd></div><div><dt>{{ 'about.languages' | t }}</dt><dd>{{ 'home.languages' | t }}</dd></div><div><dt>{{ 'about.education' | t }}</dt><dd>{{ 'about.degree' | t }}</dd></div></dl></aside>
   </div>
-</div>
+  <section class="english-card card"><div class="english-card-mark" aria-hidden="true">EN</div><div><p class="eyebrow">{{ 'about.english' | t }}</p><h2>{{ 'about.vancouver' | t }}</h2><p>{{ 'about.study' | t }}</p></div><a href="https://certificates.ecenglish.com/bf79eaae-e1f7-458d-9b14-ec5e2a2584ae#acc.3uqCJKrA" target="_blank" rel="noopener noreferrer">{{ 'about.certificate' | t }} <span aria-hidden="true">&#8599;</span></a></section>
+  <div class="skills-block"><p class="eyebrow">{{ 'about.skills' | t }}</p><h2 class="section-heading">{{ 'about.skillsTitle' | t }}</h2><div class="skill-groups">
+    <div class="skill-group"><h3>{{ 'about.frontend' | t }}</h3><p>Angular · React · TypeScript · JavaScript · HTML · CSS</p></div>
+    <div class="skill-group"><h3>{{ 'about.backend' | t }}</h3><p>Java · Spring Boot · Node.js · APIs REST · SQL · PostgreSQL</p></div>
+    <div class="skill-group"><h3>{{ 'about.quality' | t }}</h3><p>JUnit · Mockito · Jasmine · Karma · SonarQube · Dynatrace · Datadog</p></div>
+    <div class="skill-group"><h3>{{ 'about.cloud' | t }}</h3><p>{{ 'about.stackPractice' | t }}</p></div>
+    <div class="skill-group"><h3>{{ 'about.ai' | t }}</h3><p>{{ 'about.aiText' | t }}</p></div>
+  </div><p class="skills-note">{{ 'about.skillsNote' | t }}</p></div>
+</div></section>

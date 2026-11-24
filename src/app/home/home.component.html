@@ -1,16 +1,15 @@
-<div class="container-home">
-  <div class="titulo-home">
-    <div>
-      Lucas Lima - Front End Developer
-    </div>
-  </div>
-  <div class="clicar-infos">
-    <nav class="botoes">
-      <button class="botao-individual" (click)="redirecionarSobre()">SOBRE</button>
-      <button class="botao-individual" (click)="redirecionarExperiencia()">EXPERIÊNCIA E FORMAÇÃO ACADÊMICA</button>
-      <button class="botao-individual" (click)="redirecionarConquistas()">PROJETOS E PREMIAÇÕES</button>
-      <button class="botao-individual" (click)="redirecionarContato()">CONTATO</button>
-      <button class="botao-individual" (click)="redirecionarHttp()">TESTE REQUISIÇÕES HTTP</button>
-    </nav>
-  </div>
-</div>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy">
+  <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> {{ 'home.role' | t }}</p>
+  <h1>{{ 'home.titleA' | t }} <span>{{ 'home.titleB' | t }}</span></h1>
+  <p class="hero-lead">{{ 'home.lead' | t }}</p>
+  <div class="hero-actions"><a class="button" [routerLink]="'lab' | localizedRoute">{{ 'home.labLink' | t }} <span aria-hidden="true">&#8594;</span></a><a class="button button-secondary" [routerLink]="'experience' | localizedRoute">{{ 'home.experienceLink' | t }}</a><a class="resume-link" href="/assets/lucas-lima-resume-en.pdf" target="_blank" rel="noopener noreferrer">{{ 'resume.view' | t }} <span aria-hidden="true">&#8599;</span></a></div>
+  <div class="hero-meta"><span>{{ 'home.location' | t }}</span><span>{{ 'home.languages' | t }}</span></div>
+ </div><div class="hero-visual" [attr.aria-label]="'home.portrait' | t"><div class="photo-frame"><img src="/assets/foto-lucas.jpg" [alt]="'home.portrait' | t" /></div><div class="visual-note"><span class="note-mark">&#123; &#125;</span><span>Frontend + Backend<br /><strong>{{ 'home.productView' | t }}</strong></span></div><span class="visual-orbit orbit-one" aria-hidden="true"></span><span class="visual-orbit orbit-two" aria-hidden="true"></span></div></div></section>
+<section class="section highlights"><div class="container"><p class="eyebrow">{{ 'home.whatIDo' | t }}</p><h2 class="section-heading">{{ 'home.holistic' | t }}</h2><div class="highlight-grid">
+  <article class="highlight-card card"><span class="number">01</span><h3>{{ 'home.webApps' | t }}</h3><p>{{ 'home.webAppsText' | t }}</p></article>
+  <article class="highlight-card card"><span class="number">02</span><h3>{{ 'home.apis' | t }}</h3><p>{{ 'home.apisText' | t }}</p></article>
+  <article class="highlight-card card"><span class="number">03</span><h3>{{ 'home.quality' | t }}</h3><p>{{ 'home.qualityText' | t }}</p></article>
+  <article class="highlight-card card"><span class="number">04</span><h3>{{ 'home.aiHeading' | t }}</h3><p>{{ 'home.aiCopy' | t }}</p></article>
+ </div></div></section>
+<section class="english-highlight"><div class="container english-inner"><div><p class="eyebrow">{{ 'home.international' | t }}</p><h2>{{ 'home.englishTitle' | t }}</h2><p>{{ 'home.englishText' | t }}</p></div><a class="english-certificate" href="https://certificates.ecenglish.com/bf79eaae-e1f7-458d-9b14-ec5e2a2584ae#acc.3uqCJKrA" target="_blank" rel="noopener noreferrer">{{ 'home.certificate' | t }} <span aria-hidden="true">&#8599;</span></a></div></section>
+<section class="section home-journey"><div class="container journey-inner"><div><p class="eyebrow">{{ 'home.journey' | t }}</p><h2 class="section-heading">{{ 'home.journeyTitle' | t }}</h2><p class="lead">{{ 'home.journeyText' | t }}</p></div><div class="journey-links"><a class="text-link" [routerLink]="'experience' | localizedRoute">{{ 'home.educationLink' | t }} <span aria-hidden="true">&#8599;</span></a><a class="text-link" [routerLink]="'lab' | localizedRoute">{{ 'home.labLink' | t }} <span aria-hidden="true">&#8599;</span></a></div></div></section>

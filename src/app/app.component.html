@@ -1,1 +1,4 @@
-<router-outlet></router-outlet>
+<a class="skip-link" [routerLink]="[]" fragment="main-content">{{ 'app.skip' | t }}</a>
+<app-header></app-header>
+<main id="main-content" tabindex="-1"><router-outlet></router-outlet></main>
+<footer class="site-footer"><div class="container footer-inner"><span>{{ 'app.footer' | t }}</span><a [routerLink]="'contact' | localizedRoute">{{ 'app.footerLink' | t }} <span aria-hidden="true">&#8599;</span></a></div></footer>

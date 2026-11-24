@@ -3,14 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http'
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { ConquistasComponent } from './conquistas/conquistas-habilidades.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { ContatoComponent } from './contato/contato.component';
-import { RequisicoesHttpComponent } from './requisicoes-http/requisicoes-http.component';
+import { ArchitectureLabComponent } from './architecture-lab/architecture-lab.component';
+import { KnowledgeSummaryComponent } from './knowledge-summary/knowledge-summary.component';
+import { LocalizedRoutePipe, TranslatePipe } from './i18n/i18n.service';
 
 @NgModule({
   declarations: [
@@ -21,9 +22,12 @@ import { RequisicoesHttpComponent } from './requisicoes-http/requisicoes-http.co
     ConquistasComponent,
     ExperienciaComponent,
     ContatoComponent,
-    RequisicoesHttpComponent,
+    ArchitectureLabComponent,
+    KnowledgeSummaryComponent,
+    TranslatePipe,
+    LocalizedRoutePipe,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
